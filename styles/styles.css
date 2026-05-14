@@ -37,7 +37,8 @@ aside img {
     padding: 2px;
     box-shadow: 0 0 30px lightgray;
 }
-main image {
+
+main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
