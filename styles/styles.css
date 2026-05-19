@@ -36,18 +36,23 @@ p {
 }
 
 aside {
+    position: relative;
     text-align: center;
-    width: 20rem;
+    width: 300px;
 }
 
 aside img {
+    position: absolute;
+    top: 10px;
+    left: 50px;
     width: 200px;
     height: auto;
     padding: 2px;
-    box-shadow: 0 0 30px var(--shadow-color);
+    z-index: -1;
 }
 
 main img {
+    float: right;
     width: 150px;
     height: auto;
     border: 1px solid var(--border-color);
@@ -68,7 +73,5 @@ footer {
     margin: 1rem;
     border: 1px solid var(--border-color);
     padding: 1rem;
-    background-color: var (--secondary-color);
     color: var(--text-color);
 }
-
