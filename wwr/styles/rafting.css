@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #b1c5fc;
-    --secondary-color: #6c757d;
+    --primary-color: #ffffff;
+    --secondary-color: #aec4ff;
     --accent1-color: #132266;
     --accent2-color: #ffbb00;
     --heading-font: 'Georgia', serif;
@@ -54,6 +54,7 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
+    text-shadow: #000000 0px 0px 10px;
     background-color: var(--accent1-color);
     color: var(--primary-color);
 }
@@ -64,10 +65,10 @@ h2 {
     padding: 16px;
     text-align: left;
     background-color: var(--accent1-color);
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
-article {
+.hero article {
     position: absolute;
     top: 280px;
     margin: 16px;
