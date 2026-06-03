@@ -54,6 +54,7 @@ input, select, textarea {
     padding: 8px;
     margin-bottom: 8px;
     border: 1px solid black;
+    max-width: 465px;
     border-radius: 4px;
 }
 
@@ -69,7 +70,7 @@ button {
     padding: 8px 16px;
     background-color: darkgreen;
     color: white;
-    border: none;
+    border: 1px solid black;
     border-radius: 4px;
     cursor: hand;
     width: 100px;
