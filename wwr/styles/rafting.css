@@ -103,7 +103,7 @@ h2 {
     color: var(--secondary-color);
 }
 h3 {
-    position: dynamic;
+    position: static;
     top: 50px;
     width: 100%;
     padding: 0px;
@@ -234,12 +234,35 @@ footer p {
     justify-self: center;
 }
 
+.address h1 {
+    position: static;
+    grid-column: 1 / 4;
+    justify-self: center;
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    text-align: center;
+    background-color: white;
+    opacity: 1;
+    text-shadow: none;
+    color: var(--accent1-color);
+}
+
 .mapform {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 16px;
     place-items: center;
+}
+
+.map iframe {
+    grid-column: 1 / 2;
+    justify-self: center;
+    width: 400px;
+    height: 300px;
+    margin: 0;
+    border: #000000 1px solid;
 }
 
 .contact-form form {
@@ -282,7 +305,7 @@ button {
     background-color: var(--primary-color);
     color: black;
     font-weight: bold;
-    cursor: hand;
+    cursor: pointer;
     width: 100%;
 }
 
