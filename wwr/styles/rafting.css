@@ -18,12 +18,16 @@ body {
     color: var(--accent1-color);
 }
 
-header, main, footer {
-    
+header,
+main,
+footer {
+
     margin: 0 auto;
 }
 
-p, section, article {
+p,
+section,
+article {
     margin: 16px;
     padding: 8px;
 }
@@ -33,12 +37,12 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     background-color: var(--accent1-color);
-}   
+}
 
 header img {
     grid-column: 1;
     justify-self: center;
-   }
+}
 
 header nav {
     grid-column: 2 /4;
@@ -62,15 +66,14 @@ header nav ul li a {
     border-radius: 4px;
     padding-right: 16px;
     padding-left: 16px;
-    
-    
+
 }
 
-h1, h2 , h3 {
+h1,
+h2,
+h3 {
     font-family: var(--heading-font);
 }
-
-
 
 .hero {
     position: relative;
@@ -102,6 +105,7 @@ h2 {
     background-color: var(--accent1-color);
     color: var(--secondary-color);
 }
+
 h3 {
     position: static;
     top: 50px;
@@ -161,6 +165,7 @@ h3 {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     justify-self: center;
+    align-self: center;
     margin: 0;
     text-align: center;
 }
@@ -170,6 +175,8 @@ h3 {
     height: auto;
     display: block;
     margin: 0 auto;
+    box-shadow: #000000 0px 0px 10px;
+    margin-bottom: 10px;
 }
 
 .history-text2 {
@@ -204,6 +211,8 @@ h3 {
     height: auto;
     display: block;
     margin: 0 auto;
+    box-shadow: #000000 0px 0px 10px;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -270,7 +279,7 @@ footer p {
     grid-template-columns: 1fr 5fr;
     align-items: center;
     gap: 10px;
-    
+
 }
 
 .contact-form h2 {
@@ -285,7 +294,8 @@ footer p {
     color: var(--accent1-color);
 }
 
-form input[id="name"], form input[id="email"] {
+form input[id="name"],
+form input[id="email"] {
     padding: 8px;
     border: 1px solid var(--accent1-color);
     border-radius: 4px;
@@ -296,7 +306,8 @@ form input[id="name"], form input[id="email"] {
     padding: 0;
 }
 
-input, textarea {
+input,
+textarea {
     padding: 8px;
     margin-bottom: 8px;
     border: 1px solid black;
@@ -310,7 +321,7 @@ input, textarea {
 }
 
 button {
-    grid-column: 1 / 3;
+    grid-column: 1 / -1;
     padding: 8px 16px;
     border: 1px solid var(--accent1-color);
     border-radius: 4px;
@@ -319,6 +330,7 @@ button {
     font-weight: bold;
     cursor: pointer;
     width: 100%;
+    align-self: center;
 }
 
 button:hover {
@@ -330,7 +342,7 @@ button:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     place-items: center;
-    border:#000000 1px solid;
+    border: #000000 1px solid;
     background-color: var(--secondary-color);
     color: black;
 }
@@ -357,4 +369,137 @@ button:hover {
     margin: 0 auto;
     box-shadow: #000000 0px 0px 10px;
     margin-bottom: 10px;
+}
+
+.index-action {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: stretch;
+    justify-items: center;
+}
+
+.trips-index {
+    display: flex;
+    flex-direction: column;
+}
+
+.trips-index a {
+    margin-top: auto;
+}
+
+.contact-form-index {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-index h2 {
+    grid-column: 1 / 3;
+    width: 100%;
+    padding: 16px;
+    justify-self: flex-start;
+}
+
+.newsletter-index {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding-top: 16px;
+    gap: 10px;
+    flex-grow: 1;
+    grid-template-rows: auto auto auto 1fr;
+}
+
+.newsletter-index input {
+    margin-bottom: 0;
+}
+
+.newsletter-index button {
+    grid-column: 1 / -1;
+    align-self: end;
+}
+
+.additional-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-top: 16px;
+    place-items: center;
+    border: #000000 1px solid;
+    background-color: var(--secondary-color);
+    color: black;
+    text-align: center;
+}
+
+.additional-features img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-shadow: #000000 0px 0px 10px;
+    margin-bottom: 10px;
+}
+
+.trips-contact-us {
+    align-items: center;
+    text-align: center;
+    border-bottom: #000000 1px solid;
+    padding-bottom: 16px;
+
+}
+
+.trips-contact-us h1 {
+    position: static;
+    grid-column: 1 / 4;
+    justify-self: center;
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    text-align: center;
+    background-color: white;
+    opacity: 1;
+    text-shadow: none;
+    color: var(--accent1-color);
+}
+
+.trips-contact-us button {
+    width: 40%;
+    min-width: 200px;
+}
+
+.trips-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    place-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.trips-gallery img {
+    display: block;
+    justify-self: center;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+    box-shadow: #000000 0px 0px 10px;
+    margin-bottom: 10px;
+}
+
+.trip-table table {
+    max-width: 100%;
+    table-layout: fixed;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-self: center;
+}
+
+.trip-table th {
+    border-bottom: 1px solid black;
+    padding: 8px 24px;
+}
+
+.trip-table td {
+    padding: 4px 24px;
 }
